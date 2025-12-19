@@ -1,6 +1,5 @@
-Here is the full, complete code for your `README.md` file. It combines your specific feature list, the technical setup for Django, your contact info, and the external integrations (Razorpay & HTML Codex) into one professional document.
 
-```markdown
+
 # 🛒 MultiShop - Django E-Commerce Platform
 
 [![Framework](https://img.shields.io/badge/Framework-Django-092e20?style=for-the-badge&logo=django)](https://www.djangoproject.com/)
