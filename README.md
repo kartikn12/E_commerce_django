@@ -117,5 +117,3 @@ ADD IN FEATURE
 ---
 
 *Created with ❤️ by Kartik Nagpurkar*
-
-```
