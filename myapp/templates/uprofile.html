@@ -1,0 +1,87 @@
+
+{%extends 'header.html'%}
+{%load static %}
+
+{%block content%}
+
+    <!-- Breadcrumb Start -->
+    <div class="container-fluid">
+        <div class="row px-xl-5">
+            <div class="col-12">
+                <nav class="breadcrumb bg-light mb-30">
+                    <a class="breadcrumb-item text-dark" href="#">Home</a>
+                    <span class="breadcrumb-item active">profile</span>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <!-- Breadcrumb End -->
+    {% if msg %}
+    <div class="alert alert-danger" role="alert">
+      
+        {{msg}}
+    </div>
+    {% endif %}
+
+    <!-- Contact Start -->
+    <div class="container-fluid">
+        <h2 class="section-title position-relative text-uppercase mx-xl-5 mb-4"><span class="bg-secondary pr-3">profile</span></h2>
+        <div class="row px-xl-5">
+            <div class="col-lg-7 mb-5">
+                <div class="contact-form bg-light p-30">
+                    <div id="success"></div>
+                    <form   method="post" action="{% url 'uprofile' %}" enctype="multipart/form-data">
+                        {% csrf_token %}
+                        <img src="{{user.profile.url}}" style="height:200px; margin-left:270px;margin-bottom:20px;">
+                         <div class="control-group">
+                            <input type="file" name="profile" class="form-control" id="email"  />
+                            <p class="help-block text-danger"></p>
+                        </div>
+                       
+                        <div class="control-group">
+                            <input type="text" name="name" class="form-control" id="name" placeholder="Your Name"
+                                value="{{user.name}}">
+                            <p class="help-block text-danger"></p>
+                        </div>
+                        <div class="control-group">
+                            <input type="email" name="email" class="form-control" id="email" placeholder="Your Email"
+                               value="{{user.email}}" readonly >
+                            <p class="help-block text-danger"></p>
+                        </div>
+                        <div class="control-group">
+                            <textarea name="address" class="form-control" rows="3" placeholder="Your Address">{{ user.address }}</textarea>
+                            <p class="help-block text-danger"></p>
+                        </div>
+                        <div class="control-group">
+                            <input type="tel" name="mobile" class="form-control" id="email" placeholder="Your PhoneNo" value="{{user.mobile}}">
+                            <p class="help-block text-danger"></p>
+                        </div>
+
+                       
+                      
+                        
+                        
+                        <div>
+                            <button class="btn btn-primary py-2 px-4" type="submit" id="sendMessageButton">Update</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="col-lg-5 mb-5">
+                <div class="bg-light p-30 mb-30">
+                    <iframe style="width: 100%; height: 250px;"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3672.7211352020186!2d72.60642777491105!3d22.99727987919144!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e85c2fc005927%3A0x918e69150ca1c935!2sTOPS%20Technologies!5e0!3m2!1sen!2sin!4v1760030541904!5m2!1sen!2sin" 
+                    frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                </div>
+                <div class="bg-light p-30 mb-3">
+                    <p class="mb-2"><i class="fa fa-map-marker-alt text-primary mr-3"></i>123 Street, New York, USA</p>
+                    <p class="mb-2"><i class="fa fa-envelope text-primary mr-3"></i>info@example.com</p>
+                    <p class="mb-2"><i class="fa fa-phone-alt text-primary mr-3"></i>+012 345 67890</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Contact End -->
+
+
+    {%endblock%}
