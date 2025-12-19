@@ -60,7 +60,5 @@ The project utilizes the **MultiShop** template by HTML Codex, ensuring:
 ### 2. Installation
 ```bash
 # Clone the repository
-git clone [https://github.com/yourusername/ecommerce-project.git](https://github.com/yourusername/ecommerce-project.git)
+git clone [https://github.com/kartikn12/E_commerce_django.git)
 
-# Navigate to project directory
-cd ecommerce-project
