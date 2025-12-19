@@ -98,8 +98,7 @@ python manage.py runserver
 
 ## 📸 Screenshots
 
-*(Add your project screenshots here to showcase the UI)*
-
+ADD IN FEATURE 
 | Buyer Dashboard | Admin Panel | Payment Gateway |
 | --- | --- | --- |
 |  |  |  |
