@@ -8,28 +8,38 @@ A fully-featured, responsive e-commerce platform built with a premium UI and rob
 
 ---
 
-## 🌟 Key Features
+## 🚀 Key Features
 
-### 👤 User Authentication & Security
-* **Access Control:** Secure User Signup and Login system.
-* **Profile Management:** * Complete **Edit Profile** functionality.
-    * Secure **Update Password** feature.
-    * Custom **Profile Picture** uploads.
-* **Email Verification:** Automated notifications via **SMTP** for account security.
+### 👤 User & Authentication
+* **Secure Auth:** Advanced Signup and Login system for users.
+* **Account Recovery:** Password Reset functionality via **SMTP** mail.
+* **Profile Customization:** Users can update personal details and upload **Profile Pictures**.
+
+### 🛡️ Admin Dashboard (Seller Panel)
+* **Admin Management:** Dedicated Admin Signup and secure login.
+* **Inventory Control:** * **Add/Edit/Delete** products with ease.
+    * View and manage total product listings in a centralized panel.
 
 ### 🛍️ Shopping Experience
-* **Premium UI:** Built using the high-performance **MultiShop** template by HTML Codex.
-* **Inventory Browsing:** Sleek frontend for viewing products with category filtering.
-* **Cart & Wishlist:** * Dynamic **Add to Cart** system.
-    * Personalized **Wishlist** to save favorite items.
+* **Product Discovery:** View high-quality product details and galleries.
+* **Smart Selection:** * **Add to Cart:** Real-time shopping cart management.
+    * **Wishlist:** Save favorite items for future purchase.
+* **Management:** Edit or remove items directly from the user dashboard.
 
-### 💳 Payments & Transactions
-* **Razorpay Integration:** Secure, seamless checkout process.
-* **Payment Detection:** Real-time transaction monitoring and verification.
-* **Order Confirmation:** Dedicated success pages and automated email receipts via SMTP.
+### 💳 Payment & Checkout
+* **Razorpay Integration:** Seamless checkout experience with Indian payment gateway support.
+* **Transaction Logic:** Full payment flow from detection to verification.
+* **Success Confirmation:** Automated success pages upon completed transactions.
 
 ---
 
+## 🎨 Frontend Design
+The project utilizes the **MultiShop** template by HTML Codex, ensuring:
+* **Responsive Layout:** Fully optimized for Mobile, Tablet, and Desktop.
+* **Dual Dashboards:** Specific, clean interfaces for both **Buyers** and **Sellers**.
+* **Interactive UI:** Modern buttons, hover effects, and organized product grids.
+
+---
 ## 🛠️ Tech Stack
 
 | Layer | Technology |
