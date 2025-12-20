@@ -41,8 +41,8 @@ Follow these steps to set up the project locally:
 
 ### 1. Clone the Repository
 ```bash
-git clone [https://github.com/kartikn12/your-repo-name.git](https://github.com/kartikn12/your-repo-name.git)
-cd your-repo-name
+git clone [https://github.com/kartikn12/E_commerce_django.git](https://github.com/kartikn12/E_commerce_django.git)
+
 
 ```
 
